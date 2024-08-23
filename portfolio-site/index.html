@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
+	<title>Gatheesha Nipulma - Game Designer and Developer</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css2?family=Recursive:wght,CASL@300..1000,1&display=swap"
+		rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Sinhala:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onload="onLoadFunctions();">
+	<div class="nav-container">
+		<div class="nav-bar">
+			<a class="nav-item selected-nav-item" href="#"> gath </a>
+			<a class="nav-item" href="./about.html"> /about </a>
+			<a class="nav-item" href="./ideas.html"> /ideas </a>
+			<a class="nav-item" href="./now.html"> /now </a>
+			<a class="nav-item" href="#"> <span class="nav-icon-container"><img class="nav-item-icon"
+						src="./img/icons/itch.png" alt="itch.io"></span> </a>
+			<a class="nav-item" href="#"> <img class="nav-item-icon" src="./img/icons/github.png" alt="github"> </a>
+			<a class="nav-item" href="#"> <img class="nav-item-icon" src="./img/icons/instagram.png" alt="instagram">
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div class="hero">
+			<h1>
+				hi, i’m <i>gatheesha <span class="sinhala"> නිපුල්ම</span></i> and i do <br />
+				<strong>game development </strong> and
+				<strong> visual commiunication design</strong>. This is my portfolio!
+			</h1>
+			<p class="subtitle">
+				I add value to any project I take on by blending technical skills
+				with creativity and aesthetics.
+			</p>
+			<div class="button">
+				<a class="button-item" href="#projects"> See My Projects </a>
+			</div>
+		</div>
+
+		<div class="projects" id="projects">
+			<div class="tabs-container">
+				<div class="tabs">
+					<input type="radio" id="radio-1" name="tabs" onclick="showGames()" checked />
+					<label class="tab" for="radio-1">Games </label>
+
+					<input type="radio" id="radio-2" onclick="showGraphics()" name="tabs" />
+					<label class="tab" for="radio-2">Graphics </label>
+
+					<input type="radio" id="radio-3" onclick="showArt()" name="tabs" />
+					<label class="tab" for="radio-3">DigitalArt</label>
+
+					<span class="glider"></span>
+				</div>
+			</div>
+
+			<div class="cards" id="game">
+				<div class="card game">
+					<img class="card-img" src="./img/games/thewolfbase.png" />
+					<div class="card-title">Tanks Tanks Man!!</div>
+					<div class="card-body">
+						<p>
+							<strong> Release Date: </strong>2019.05.12 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> 2 <br />
+							<strong> Role: </strong> Programmer <br />
+							<strong> Genres: </strong> Metroidvania, Side Scrolling <br />
+						</p>
+						<p>Made within 96h For JamGoJam JamDNA 13</p>
+					</div>
+				</div>
+
+				<div class="card game">
+					<img class="card-img" src="./img/games/thewolfbase.png" />
+					<div class="card-title">Tanks Tanks Man!!</div>
+					<div class="card-body">
+						<p>
+							<strong> Release Date: </strong>2019.05.12 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> 2 <br />
+							<strong> Role: </strong> Programmer <br />
+							<strong> Genres: </strong> Metroidvania, Side Scrolling <br />
+						</p>
+						<p>Made within 96h For JamGoJam JamDNA 13</p>
+					</div>
+				</div>
+
+				<div class="card game">
+					<img class="card-img" src="./img/games/thewolfbase.png" />
+					<div class="card-title">Tanks Tanks Man!!</div>
+					<div class="card-body">
+						<p>
+							<strong> Release Date: </strong>2019.05.12 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> 2 <br />
+							<strong> Role: </strong> Programmer <br />
+							<strong> Genres: </strong> Metroidvania, Side Scrolling <br />
+						</p>
+						<p>Made within 96h For JamGoJam JamDNA 13</p>
+					</div>
+				</div>
+
+				<div class="card game">
+					<div class="card-img">
+						<img class="card-img-static" src="./img/games/thewolfbase.png" />
+						<img class="card-img-hover" src="./img/games/thewolfbase-g.gif" />
+					</div>
+					<div class="card-title">Tanks Tanks Man!!</div>
+					<div class="card-body">
+						<p>
+							<strong> Release Date: </strong>2019.05.12 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> 2 <br />
+							<strong> Role: </strong> Programmer <br />
+							<strong> Genres: </strong> Metroidvania, Side Scrolling <br />
+						</p>
+						<p>Made within 96h For JamGoJam JamDNA 13</p>
+					</div>
+				</div>
+
+				<div class="card game card-wide">
+					<div class="card-img">
+						<img class="card-img-static" src="./img/games/ttm.png" />
+						<img class="card-img-hover" src="./img/games/ttm-g.gif" />
+					</div>
+
+					<div class="card-title">Tanks Tanks Man!!</div>
+					<div class="card-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tiles" id="graphic">
+				<div class="tile graphic square"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile graphic square"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile graphic landscape"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile graphic potrait"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile graphic potrait"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="tiles" id="art">
+				<div class="tile art square" style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile art square" style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile art potrait"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile art landscape"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+
+				<div class="tile art potrait"
+					style="background-image: url(./img/graphics/BroonTheBullyOpenForStud.jpg)">
+					<div class="tile-title">Tanks Tanks Man!!</div>
+					<div class="title-body">
+						<p>
+							<strong> Release Date: </strong>2018.10.29 <br />
+							<strong> Engine: </strong> Construct 2 <br />
+							<strong> Art: </strong> illustrator <br />
+							<strong> Team Size: </strong> Solo <br />
+							<strong> Role: </strong> Artist, Programmer <br />
+							<strong> Genres: </strong> Local Multiplayer Versus, Top Down Shooter
+							<br />
+						</p>
+						<p>This is where it all started 😄</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="contact">
+				<h1>contat me lol</h1>
+				<p>elama suddah</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">2024@gatheesha</div>
+</body>
+
+<script>
+	const graphic_container = document.getElementById("graphic");
+	const art_container = document.getElementById("art");
+	const game_container = document.getElementById("game");
+
+	function onLoadFunctions() {
+		hide("graphic");
+		show("game");
+		hide("art");
+
+		graphic_container.style.display = "none";
+		art_container.style.display = "none";
+	}
+
+	function showGraphics() {
+		show("graphic");
+		hide("game");
+		hide("art");
+
+		game_container.style.display = "none";
+		graphic_container.style.display = "grid";
+		art_container.style.display = "none";
+	}
+	function showGames() {
+		hide("graphic");
+		show("game");
+		hide("art");
+
+		game_container.style.display = "grid";
+		graphic_container.style.display = "none";
+		art_container.style.display = "none";
+	}
+	function showArt() {
+		hide("graphic");
+		hide("game");
+		show("art");
+
+		game_container.style.display = "none";
+		graphic_container.style.display = "none";
+		art_container.style.display = "grid";
+	}
+
+	function show(name) {
+		var cards = document.getElementsByClassName(name);
+		for (var i = 0; i < cards.length; i++) {
+			cards[i].style.display = "block";
+		}
+	}
+
+	function hide(name) {
+		var cards = document.getElementsByClassName(name);
+		for (var i = 0; i < cards.length; i++) {
+			cards[i].style.display = "none";
+		}
+	}
+</script>
+
+</html>
