@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gatarita Games - Inuka and Gatheesha, making games together since 2020. Check out handful of cool games we made.">
+    <meta name="keywords" content="Gatarita Games, game development, Sri Lanka, indie games, game jams, client projects, Godot, Unity, gatheesha, inuka, royalbutts, royal butts, zombie urthal, godot sri lanka, sinhala">
+    <meta name="author" content="Gatarita Games">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Gatarita Games | Game Developer in Sri Lanka">
+    <meta property="og:description" content="Inuka and Gatheesha, making games together since 2020. Check out handful of cool games we made.">
+    <meta property="og:image" content="img/header.png">
+    <meta property="og:url" content="https:/gatheesha.com/gatarita">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gatarita Games | Game Developer in Sri Lanka">
+    <meta name="twitter:description" content="Inuka and Gatheesha, making games together since 2020. Check out handful of cool games we made.">
+    <meta name="twitter:image" content="img/header.png">
+
+    <link rel="icon" type="image/x-icon" href="./favicon.ico"> 
+    <link rel="manifest" href="/site.webmanifest">
+
+    <title>Gatarita Games | Game Developer in Sri Lanka</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66db83a902.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* Override Bulma dark theme colors */
+        :root {
+            /* Colors and Lightness values */
+            scrollbar-color: #ffffff #000000 !important;
+            scrollbar-width: thin !important;
+            --bulma-scheme-h: 221;
+            --bulma-scheme-s: 14%;
+            --bulma-light-l: 90%;
+            --bulma-light-invert-l: 20%;
+            --bulma-dark-l: 20%;
+            --bulma-dark-invert-l: 90%;
+            --bulma-soft-l: 90%;
+            --bulma-bold-l: 20%;
+            --bulma-soft-invert-l: 20%;
+            --bulma-bold-invert-l: 90%;
+    
+            --bulma-link-text: hsla(var(--bulma-warning-h), var(--bulma-warning-s), var(--bulma-warning-on-scheme-l), 1);
+    
+            --bulma-scheme-brightness: dark;
+            --bulma-scheme-main-l: 0%;
+            --bulma-scheme-main-bis-l: 11%;
+            --bulma-scheme-main-ter-l: 13%;
+    
+        }
+    
+        html {
+            scroll-snap-type: y mandatory;
+        }
+    
+        body {
+            font-family: 'Quicksand', sans-serif;
+        }
+    
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    
+        .header {
+    
+            background-image: url(img/header.png);
+            background-position-x: center;
+            background-position-y: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    
+        .snap-scroll {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+    
+        .has-equal-height {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+    
+        .has-equal-height .card-footer {
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hero is-fullheight snap-scroll">
+        <div class="hero-body">
+            <div class="container columns is-desktop is-vcentered is-centered">
+                <div class="column is-2"></div>
+                <div class="column">
+                    <div class="container has-text-centered has-text-left">
+                        <h1 class="title has-text-white">
+                            gatarita
+                        </h1>
+                        <h2 class="subtitle">2 best friends, making games together since 2020</h2>
+                        <span class="icon-text has-text-white">
+                            <a href="https://gatheesha.itch.io/" aria-label="Visit our Itch.io page">
+                                <span class="icon">
+                                    <i class="fa-brands fa-itch-io"></i>
+                                </span>
+                            </a>
+                            <a href="https://youtube.com/@gatheesha4165?si=f07H9XmoklpSzEZT" aria-label="Visit our YouTube channel">
+                                <span class="icon">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </span>
+                            </a>
+                            <a href="#" aria-label="Visit our Facebook page">
+                                <span class="icon">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </span>
+                            </a>
+                            <a href="#" aria-label="Visit our X (formerly Twitter) page">
+                                <span class="icon">
+                                    <i class="fa-brands fa-x-twitter"></i>
+                                </span>
+                            </a>
+                            <a href="https://discord.gg/NtPrEgyrFy" aria-label="Join our Discord server">
+                                <span class="icon">
+                                    <i class="fa-brands fa-discord"></i>
+                                </span>
+                            </a>
+                            <a href="#" aria-label="Visit our official website">
+                                <span class="icon">
+                                    <i class="fa-solid fa-link"></i>
+                                </span>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="column">
+                    <figure class="image is-narrow">
+                        <img src="img/header.png" alt="Gatarita Games Header Image" />
+                    </figure>
+                </div>
+                <div class="column is-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight snap-scroll">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title has-text-light">Meet Inuka and Gath</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight snap-scroll">
+        <div class="hero-body">
+            <div class="container has-text-centered has-text-left">
+                <h1 class="title has-text-white">
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src="img/inuka.png" alt="Inuka Senanayake" />
+                    </figure>
+                    <br>
+                    Inuka Senanayake
+                </h1>
+                <h2 class="subtitle">does the coding stuff</h2>
+                <p>godtier in <b>godot's gdscript</b> <br>
+                    along with <b>js, python, c#</b></p><br>
+                <p>knows: <b>godot, unity, unreal, love2d</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight snap-scroll">
+        <div class="hero-body">
+            <div class="container has-text-centered has-text-left">
+                <h1 class="title ">
+                    <figure class="image is-128x128">
+                        <img class="is-rounded" src="img/gath.png" alt="Gatheesha නිපුල්ම" />
+                    </figure>
+                    <br>
+                    Gatheesha නිපුල්ම
+                </h1>
+                <h2 class="subtitle">does the drawing stuff</h2>
+                <p>godtier in <b>photoshop, illustrator</b> <br>
+                    along with <b>gdscript, css, python</b></p><br>
+                <p>knows: <b>godot, unity, animate, after effects, CI/CD, version control</b></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight snap-scroll">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <p class="title has-text-light">Games We Made</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- Featured Games -->
+    <section class="hero is-fullheight snap-scroll">
+            <div class="hero-body">
+                <div class="container columns is-centered">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <!-- <div class="header"></div> -->
+                        <figure class="image is-narrow">
+                            <img id="slideshow" src="img/RoyalbuttsCharacterPosters-YOU.jpg" />
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="container has-text-centered has-text-left ">
+                            <h1 class="title has-text-white">
+                                Massacre Of Royalbutts
+                            </h1>
+                            <p>our debut commerical mobile game. Royal Butts is a 2D side scrolling
+                                shoot-em-up game featuring a global leaderboard, 11 levels with 3 boss fights plus a
+                                secret
+                                ending.</p>
+                            <br>
+                            <div class="buttons">
+                                <a href="https://gatheesha.itch.io/royalbutts">
+                                    <div class="button is-warning">
+                                        <span class="icon">
+                                            <i class="fa-brands fa-itch-io"></i>
+                                        </span>
+                                        <span><strong>play</strong></span>
+                                    </div>
+                                </a>
+                                <a href="https://youtu.be/3MrK3M12Euk?si=QY4XuVGm9qBUKE1E">
+                                    <div class="button is-warning">
+                                        <span class="icon">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </span>
+                                        <span><strong>trailer</strong></span>
+                                    </div>
+                                </a>
+                                <a href="https://youtube.com/shorts/adVe7SIMdYM?si=GK_yd4Wfe2-GekTD">
+                                    <div class="button is-warning">
+                                        <span class="icon">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </span>
+                                        <span><strong>fun vlog</strong></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="buttons">
+                                <button class="button js-modal-trigger  is-white is-outlined"
+                                    data-target="modal-royalbutts">
+                                    <strong>Read More </strong>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+            </div>
+    </section>
+
+    <section class="hero is-fullheight snap-scroll">
+            <div class="hero-body">
+                <div class="container columns is-centered">
+                    <div class="column is-2"></div>
+                    <div class="column">
+                        <!-- <div class="header"></div> -->
+                        <figure class="image is-narrow">
+                            <img id="slideshow" src="img/zombieurthal/cover.jpg" />
+                        </figure>
+                    </div>
+                    <div class="column">
+                        <div class="container has-text-centered has-text-left ">
+                            <h1 class="title has-text-white">
+                                Zombie Urthal
+                            </h1>
+                            <p>a fast phased stratergy game about managing a zombie army, made within 4 days for GMTK
+                                Game
+                                Jam 2024.</p>
+                            <br>
+                            <div class="buttons">
+                                <a href="https://gatheesha.itch.io/zombieurathal">
+                                    <div class="button is-warning">
+                                        <span class="icon">
+                                            <i class="fa-brands fa-itch-io"></i>
+                                        </span>
+                                        <span><strong>play</strong></span>
+                                    </div>
+                                </a>
+                                <a href="https://youtu.be/EQdpoFCvJgk">
+                                    <div class="button is-warning">
+                                        <span class="icon">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </span>
+                                        <span><strong>fun vlog</strong></span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="buttons">
+                                <button class="button js-modal-trigger  is-white is-outlined"
+                                    data-target="modal-zombieurthal">
+                                    <strong>Read More </strong>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column is-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Projects -->
+    <section class="section snap-scroll">
+            <div class="container mb-6">
+                <h1 class="title">Client Projects</h1>
+                <h2 class="subtitle is-6">
+                    featured games and projects we made for clients
+                </h2>
+            </div>
+            <div class="container">
+                <div class="columns is-multiline">
+                    <div class="column is-one-third snap-scroll">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img class="image" src="img/flappy-dragon.png" </img>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4">Flappy Dragon: Sky Adventure</p>
+                                <p class="subtitle is-6">A flappy bird like game featuring a really fun to control
+                                    dragon, a
+                                    day night cycle plus a global leaderboard.</p>
+                                <div class="buttons">
+                                    <a
+                                        href="https://play.google.com/store/apps/details?id=org.gatarita.flappydragon&hl=en">
+                                        <div class="button is-warning">
+                                            <span class="icon">
+                                                <i class="fa-brands fa-google-play"></i>
+                                            </span>
+                                            <span><strong>play</strong></span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third snap-scroll">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="img/boids-simulation.gif" alt="Project 2">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4">Boids Simulation Prototype</p>
+                                <p class="subtitle is-6">Simulates the flocking behaviour of birds, and related group
+                                    motion. Each "boid" follows 3 very simple rules 'seperation', 'alignment' and
+                                    'cohesion'
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third snap-scroll">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image ">
+                                    <img src="img/basker-chess.gif" alt="Project 3">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-4">Board Game Prototype</p>
+                                <p class="subtitle is-6">A local multiplayer turn-based game featuring grid-based
+                                    movement,
+                                    with
+                                    chess-like unique moves for each player and dynamic scenarios for various
+                                    challenges.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+        <!-- Jam Games -->
+        <section class="section snap-scroll">
+            <div class="container mb-6">
+                <h1 class="title">Jam Games</h1>
+                <h2 class="subtitle is-6">
+                    Featured games we made for game jams. <br>
+                    Game jams are game dev marathons to create a complete game in small time frame.
+                </h2>
+            </div>
+            <div class="container">
+                <div class="columns is-multiline">
+
+                    <div class="column is-one-third snap-scroll">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img class="image" src="img/yathura.png" </img>
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <p class="title is-6">Yathura</p>
+                                <div class="content">
+                                    Made within 4 days for Brackeys game jam 2024! Yathura is a game
+                                    about escaping a timeloop or a door<br> but wait, is it really?
+                                </div>
+                                <div class="buttons">
+                                    <a href="https://gatheesha.itch.io/yathura">
+                                        <div class="button is-warning">
+                                            <span class="icon">
+                                                <i class="fa-brands fa-itch-io"></i>
+                                            </span>
+                                            <span><strong>play</strong></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time datetime="2016-1-1">18 Feb 2024</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third snap-scroll">
+                        <div class="card has-equal-height">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img class="image" src="img/kotu.png" </img>
+                                </figure>
+                            </div>
+                            <div class="card-content has-equal-height">
+                                <p class="title is-6">Kotu</p>
+                                <div class="content">
+                                    A local multiplayer co-op and versus game at the same time!
+                                </div>
+                                <div class="buttons">
+                                    <a href="https://gatheesha.itch.io/kotu">
+                                        <div class="button is-warning">
+                                            <span class="icon">
+                                                <i class="fa-brands fa-itch-io"></i>
+                                            </span>
+                                            <span><strong>play</strong></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time datetime="2016-1-1">19 Dec 2021</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third snap-scroll">
+                        <div class="card has-equal-height">
+                            <div class="card-image ">
+                                <figure class="image">
+                                    <img class="image" src="img/aul.png" </img>
+                                </figure>
+                            </div>
+                            <div class="card-content has-equal-height">
+                                <p class="title is-6">Aul</p>
+                                <div class="content">
+                                    Made within 1 week for for Brackeys Game Jam 2021.2
+                                    unfinished topdown zombie shooter.
+                                </div>
+                                <div class="buttons">
+                                    <a href="https://gatheesha.itch.io/aul">
+                                        <div class="button is-warning">
+                                            <span class="icon">
+                                                <i class="fa-brands fa-itch-io"></i>
+                                            </span>
+                                            <span><strong>play</strong></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time datetime="2016-1-1">29 Aug 2021</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-one-third snap-scroll">
+                        <div class="card has-equal-height">
+                            <div class="card-image ">
+                                <figure class="image">
+                                    <img class="image" src="img/bittara.png" </img>
+                                </figure>
+                            </div>
+                            <div class="card-content has-equal-height">
+                                <p class="title is-6">Aul</p>
+                                <div class="content">
+                                    simple metroidvania-style game we made for Newgrounds July jam 21.
+                                </div>
+                                <div class="buttons">
+                                    <a href="https://www.newgrounds.com/portal/view/807043">
+                                        <div class="button is-warning">
+                                            <span class="icon">
+                                                <i class="fa-brands fa-itch-io"></i>
+                                            </span>
+                                            <span><strong>play</strong></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <footer class="card-footer">
+                                    <time datetime="2016-1-1">25 Jul 2021</time>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="hero is-fullheight snap-scroll">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h2 class="title has-text-white">We are available to hire through
+                        <span class="has-text-success">Fiverr</span>
+                    </h2>
+                    <a href="https://www.fiverr.com/gatarita_games">
+                        <button class="button is-success"><b>Fiverr</b></button>
+                    </a>
+                </div>
+
+            </div>
+            <section class="section">
+                <div class="container">
+                    <nav class="level">
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Rating</p>
+                                <p class="title"><span class="icon-text">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span>4.6</span>
+                                    </span>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Completed Orders</p>
+                                <p class="title">14</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Total Reviews</p>
+                                <p class="title">10</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <p class="heading">Total Plays</p>
+                                <p class="title">10K+</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+        </section>
+
+        <section class="hero is-fullheight snap-scroll">
+            <div class="hero-body">
+                <div class="container has-text-centered">
+                    <h2 class="title has-text-white">Keep in Touch
+                    </h2>
+                    <p class="subtitle has-text-white">Feel free to reach out for any inquiries or collabs.</p>
+                    <a href="mailto:gataritagames@gmail.com">
+                        <button class="button is-warning">
+                            <span class="icon-text">
+                                <span class="icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <span><b>Email</b></span>
+                            </span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="snap-scroll">
+            <footer class="footer has-background-warning has-text-black">
+                <div class="content has-text-centered">
+                    <p>last updated <strong class="has-text-black">2024 Augest - gath</strong>,
+                    powered by <strong><a class="has-text-black" href="https://bulma.io/">bulma</a></p></strong>
+                </div>
+            </footer>
+        </section>
+
+        <div id="modal-royalbutts" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+
+                <header class="modal-card-head">
+                    <p class="modal-card-title">royal butts technical glibberish</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        <h1>Hello World</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices
+                            eleifend
+                            gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
+                            Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+                        <h2>Second level</h2>
+                        <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque
+                            condimentum
+                            maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis.
+                            Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim
+                            dui.
+                            Ut et neque nisl.</p>
+                        <ul>
+                            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                            <li>Ut non enim metus.</li>
+                        </ul>
+                        <h3>Third level</h3>
+                        <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus
+                            lacus
+                            ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+                        <ol>
+                            <li>Donec blandit a lorem id convallis.</li>
+                            <li>Cras gravida arcu at diam gravida gravida.</li>
+                            <li>Integer in volutpat libero.</li>
+                            <li>Donec a diam tellus.</li>
+                            <li>Aenean nec tortor orci.</li>
+                            <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
+                            <li>Vivamus maximus ultricies pulvinar.</li>
+                        </ol>
+                        <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum,
+                            ut
+                            blandit est tellus sit amet turpis.</blockquote>
+                        <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em>
+                            elementum.
+                            Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
+                        <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in
+                            luctus. Maecenas vestibulum interdum commodo.</p>
+                        <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi
+                            sit
+                            amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
+                        <h4>Fourth level</h4>
+                        <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a
+                            tellus laoreet, at elementum ex efficitur.</p>
+                        <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus
+                            eleifend
+                            arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis
+                            sapien.</p>
+                        <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at,
+                            vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur
+                            ligula
+                            sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at
+                            cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex
+                            sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium
+                            metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius
+                            metus
+                            non pellentesque.</p>
+                        <h5>Fifth level</h5>
+                        <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at
+                            nunc
+                            elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel
+                            nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.
+                        </p>
+                        <h6>Sixth level</h6>
+                        <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam
+                            dignissim, ut
+                            eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc,
+                            scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec
+                            consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed
+                            varius sapien odio vitae est. Etiam at cursus metus.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <div id="modal-zombieurthal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+
+                <header class="modal-card-head">
+                    <p class="modal-card-title">zombie urthal technical glibberish</p>
+                    <button class="delete" aria-label="close"></button>
+                </header>
+                <section class="modal-card-body">
+                    <div class="content">
+                        <h1>Hello World</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices
+                            eleifend
+                            gravida, nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui.
+                            Fusce erat odio, sollicitudin vel erat vel, interdum mattis neque.</p>
+                        <h2>Second level</h2>
+                        <p>Curabitur accumsan turpis pharetra <strong>augue tincidunt</strong> blandit. Quisque
+                            condimentum
+                            maximus mi, sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis.
+                            Suspendisse potenti. Etiam mattis sem rhoncus lacus dapibus facilisis. Donec at dignissim
+                            dui.
+                            Ut et neque nisl.</p>
+                        <ul>
+                            <li>In fermentum leo eu lectus mollis, quis dictum mi aliquet.</li>
+                            <li>Morbi eu nulla lobortis, lobortis est in, fringilla felis.</li>
+                            <li>Aliquam nec felis in sapien venenatis viverra fermentum nec lectus.</li>
+                            <li>Ut non enim metus.</li>
+                        </ul>
+                        <h3>Third level</h3>
+                        <p>Quisque ante lacus, malesuada ac auctor vitae, congue <a href="#">non ante</a>. Phasellus
+                            lacus
+                            ex, semper ac tortor nec, fringilla condimentum orci. Fusce eu rutrum tellus.</p>
+                        <ol>
+                            <li>Donec blandit a lorem id convallis.</li>
+                            <li>Cras gravida arcu at diam gravida gravida.</li>
+                            <li>Integer in volutpat libero.</li>
+                            <li>Donec a diam tellus.</li>
+                            <li>Aenean nec tortor orci.</li>
+                            <li>Quisque aliquam cursus urna, non bibendum massa viverra eget.</li>
+                            <li>Vivamus maximus ultricies pulvinar.</li>
+                        </ol>
+                        <blockquote>Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum,
+                            ut
+                            blandit est tellus sit amet turpis.</blockquote>
+                        <p>Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em>justo sodales</em>
+                            elementum.
+                            Maecenas ultrices lacus quis neque consectetur, et lobortis nisi molestie.</p>
+                        <p>Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in
+                            luctus. Maecenas vestibulum interdum commodo.</p>
+                        <p>Suspendisse egestas sapien non felis placerat elementum. Morbi tortor nisl, suscipit sed mi
+                            sit
+                            amet, mollis malesuada nulla. Nulla facilisi. Nullam ac erat ante.</p>
+                        <h4>Fourth level</h4>
+                        <p>Nulla efficitur eleifend nisi, sit amet bibendum sapien fringilla ac. Mauris euismod metus a
+                            tellus laoreet, at elementum ex efficitur.</p>
+                        <p>Maecenas eleifend sollicitudin dui, faucibus sollicitudin augue cursus non. Ut finibus
+                            eleifend
+                            arcu ut vehicula. Mauris eu est maximus est porta condimentum in eu justo. Nulla id iaculis
+                            sapien.</p>
+                        <p>Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at,
+                            vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus. Nam interdum efficitur
+                            ligula
+                            sit amet ullamcorper. Etiam tristique, leo vitae porta faucibus, mi lacus laoreet metus, at
+                            cursus leo est vel tellus. Sed ac posuere est. Nunc ultricies nunc neque, vitae ultricies ex
+                            sodales quis. Aliquam eu nibh in libero accumsan pulvinar. Nullam nec nisl placerat, pretium
+                            metus vel, euismod ipsum. Proin tempor cursus nisl vel condimentum. Nam pharetra varius
+                            metus
+                            non pellentesque.</p>
+                        <h5>Fifth level</h5>
+                        <p>Aliquam sagittis rhoncus vulputate. Cras non luctus sem, sed tincidunt ligula. Vestibulum at
+                            nunc
+                            elit. Praesent aliquet ligula mi, in luctus elit volutpat porta. Phasellus molestie diam vel
+                            nisi sodales, a eleifend augue laoreet. Sed nec eleifend justo. Nam et sollicitudin odio.
+                        </p>
+                        <h6>Sixth level</h6>
+                        <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam
+                            dignissim, ut
+                            eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc,
+                            scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec
+                            consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed
+                            varius sapien odio vitae est. Etiam at cursus metus.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                // Functions to open and close a modal
+                function openModal($el) {
+                    $el.classList.add('is-active');
+                }
+
+                function closeModal($el) {
+                    $el.classList.remove('is-active');
+                }
+
+                function closeAllModals() {
+                    (document.querySelectorAll('.modal') || []).forEach(($modal) => {
+                        closeModal($modal);
+                    });
+                }
+
+                // Add a click event on buttons to open a specific modal
+                (document.querySelectorAll('.js-modal-trigger') || []).forEach(($trigger) => {
+                    const modal = $trigger.dataset.target;
+                    const $target = document.getElementById(modal);
+
+                    $trigger.addEventListener('click', () => {
+                        openModal($target);
+                    });
+                });
+
+                // Add a click event on various child elements to close the parent modal
+                (document.querySelectorAll('.modal-background, .modal-close, .modal-card-head .delete, .modal-card-foot .button') || []).forEach(($close) => {
+                    const $target = $close.closest('.modal');
+
+                    $close.addEventListener('click', () => {
+                        closeModal($target);
+                    });
+                });
+
+                // Add a keyboard event to close all modals
+                document.addEventListener('keydown', (event) => {
+                    if (event.key === "Escape") {
+                        closeAllModals();
+                    }
+                });
+
+                // Slideshow functionality
+                const images = ["img/royalbutts/1.jpg", "img/royalbutts/2.jpg", "img/royalbutts/3.jpg"];
+                let currentIndex = 0;
+                const slideshow = document.getElementById("slideshow");
+
+                function changeImage() {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    slideshow.src = images[currentIndex];
+                }
+
+                // Change image every 3 seconds (3000 milliseconds)
+                setInterval(changeImage, 2500);
+            });
+        </script>
+
+    </body>
+
+</html>
