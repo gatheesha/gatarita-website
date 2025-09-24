@@ -57,6 +57,10 @@
             --bulma-scheme-main-bis-l: 11%;
             --bulma-scheme-main-ter-l: 13%;
 
+            --bulma-warning-h: 48;
+            --bulma-warning-s: 95%;
+            --bulma-warning-l: 63%;
+
         }
 
         .profile-link a {
@@ -100,19 +104,44 @@
         .has-equal-height .card-footer {
             margin-top: auto;
         }
+
+        img {
+            border-radius: var(--bulma-control-radius);
+        }
+
+        #myVideo {
+            position: fixed;
+            z-index: -1;
+            left: 0px;
+            top: 0px;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            pointer-events: none;
+            filter: brightness(10%);
+        }
+
+        .logo {
+            width: 12rem !important;
+            height: auto !important;
+
+        }
     </style>
 </head>
 
 <body>
+    <video autoplay muted loop id="myVideo">
+        <source src="img/video.mp4" type="video/mp4">
+    </video>
     <section class="hero is-fullheight snap-scroll">
         <div class="hero-body">
             <div class="container columns is-desktop is-vcentered is-centered">
                 <div class="column is-2"></div>
                 <div class="column">
                     <div class="container has-text-centered has-text-left">
-                        <h1 class="title has-text-white">
-                            gatarita
-                        </h1>
+                        <figure class="image">
+                            <img class="image logo" src="img/logo.png" />
+                        </figure>
                         <h2 class="subtitle">2 best friends, making games together since 2020</h2>
                         <span class="icon-text has-text-white">
                             <a href="https://gatheesha.itch.io/" aria-label="Visit our Itch.io page">
@@ -150,6 +179,214 @@
                     </figure>
                 </div>
                 <div class="column is-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero is-fullheight snap-scroll">
+        <div class="hero-body">
+            <div class="is-felx container has-text-centered">
+                <div class="container has-text-centered my-6">
+                    <p class="title has-text-light">See what people have to say!</p>
+                </div>
+                <div class="container grid is-col-min-16  is-desktop is-vcentered is-centered">
+                    <div class="cell">
+                        <div class="card has-equal-height">
+                            <div class="card-content">
+                                <p class="title is-6 has-text-left">
+                                    “One of the easiest teams to get along with, they took all the information of what I
+                                    wanted and understood what
+                                    my end goal was had communication throughout my order come up with ideas of what to
+                                    add
+                                    devlivered well in advance.
+                                    much appreciated for his and teams work.”
+                                </p>
+                                <p class="subtitle is-6 has-text-left">stephenleeholme from Fiverr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="rating card-footer-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card has-equal-height">
+                            <div class="card-content">
+                                <p class="title is-6 has-text-left">
+                                    “They're very friendly and helped me a lot. They provided me with documents
+                                    explaining
+                                    how everything works. They delivered a completely bug-free experience, which was
+                                    impressive.
+                                    They also collaborated with me on the budget, making the whole process smooth and
+                                    easy.
+                                    Whever I had questions, they were quick to provide answers. I would rate them 5/5!”
+                                </p>
+                                <p class="subtitle is-6 has-text-left">Kanew from Fiverr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="rating card-footer-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card has-equal-height">
+                            <div class="card-content">
+                                <p class="title is-6 has-text-left">
+                                    “I got exactly what i wanted, and the communication great. I'm looking forward to
+                                    working
+                                    with this team again.”
+                                </p>
+                                <p class="subtitle is-6 has-text-left">Yet another Fiverr client</p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="rating card-footer-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card has-equal-height">
+                            <div class="card-content">
+                                <p class="title is-6 has-text-left">
+                                    “A team with strong communication, understanding and doing their job properly. I
+                                    definitely got what I expected.”
+                                </p>
+                                <p class="subtitle is-6 has-text-left">lewanpolkka from Fiverr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="rating card-footer-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card has-equal-height">
+                            <div class="card-content">
+                                <p class="title is-6 has-text-left">
+                                    “Gatarita's game developments skills are top-notch! The attention to detaails and
+                                    professionalism in the work really stood out. Plus, working with Gatarita was a
+                                    breeze -
+                                    amazingly cooperative and understood exactly what was needed.”
+                                </p>
+                                <p class="subtitle is-6 has-text-left">eatiswhateatis from Fiverr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="rating card-footer-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="cell">
+                        <div class="card has-equal-height">
+                            <div class="card-content">
+                                <p class="title is-6 has-text-left">
+                                    “Gatarita did an AMAZING job - professional, detail-oriented, and delivered a
+                                    bug-free
+                                    project that exceeded expectations. Their quick responsiveness and willingess to go
+                                    above and beyond made collaboration smooth and enjoyble. Highly recommend wokring
+                                    with
+                                    them!”
+                                </p>
+                                <p class="subtitle is-6 has-text-left">coydoy from Fiverr</p>
+                            </div>
+                            <footer class="card-footer">
+                                <div class="rating card-footer-item">
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                    <span class="icon">
+                                        <i class="fa-solid fa-star has-text-warning"></i>
+                                    </span>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -275,6 +512,9 @@
                         <h1 class="title has-text-white">
                             Massacre Of Royalbutts
                         </h1>
+                        <div class="subtitle">
+                            <b>Godot</b> | 2D | Side Scrolling | Beat-em Up
+                        </div>
                         <p>our debut commerical mobile game. Royal Butts is a 2D side scrolling
                             shoot-em-up game featuring a global leaderboard, 11 levels with 3 boss fights plus a
                             secret
@@ -334,6 +574,9 @@
                         <h1 class="title has-text-white">
                             Sanwardaka
                         </h1>
+                        <div class="subtitle">
+                            <b>Godot</b> | 2D | Puzzel | Platformer | Narrative
+                        </div>
                         <p>A puzzel platformer that lets you satisfyingly hack through the levels with a broken pause
                             menu, made within 3 days for Patch Notes v1.0 Game Jam 2025. (Jam theme was Error is the
                             feature)</p>
@@ -502,7 +745,8 @@
                             <div class="media">
                                 <div class="media-content">
                                     <p class="title is-4">Yathura</p>
-                                    <p class="subtitle is-6"><strong>Godot</strong> | 2D | Adventure | Narrative | Puzzle</p>
+                                    <p class="subtitle is-6"><strong>Godot</strong> | 2D | Adventure | Narrative |
+                                        Puzzle</p>
                                 </div>
                             </div>
                             <div class="content">
